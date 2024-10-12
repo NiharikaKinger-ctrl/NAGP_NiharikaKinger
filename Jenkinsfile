@@ -1,28 +1,46 @@
 pipeline {
     agent any
+
     stages {
-        stage('Checkout'){
-        steps{
-            echo 'Cloning the repository'
-            git branch: 'master', url: 'https://github.com/NiharikaKinger-ctrl/Niharika_NAGP_2024.git'
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/NiharikaKinger-ctrl/NAGP_NiharikaKinger.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'mvn clean install'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            steps {
+                withSonarQubeEnv('SonarQube') {
+                    sh 'mvn sonar:sonar'
+                }
+            }
+        }
+
+        stage('Archive') {
+            steps {
+                archiveArtifacts artifacts: 'target/*.jar', allowEmptyArchive: true
+            }
         }
     }
-    stage('Test'){
-        steps{
-             echo 'Testing the code'
-             bat 'mvn clean test'
+
+    post {
+        success {
+            echo 'Build completed successfully!'
         }
-    }
-    }
-    post{
-        always{
-            echo 'this is always going to execute, in case of failure as well'
-        }
-        success{
-            echo 'build success'
-        }
-        failure{
-            echo 'build failed'
+        failure {
+            echo 'Build failed!'
         }
     }
 }
