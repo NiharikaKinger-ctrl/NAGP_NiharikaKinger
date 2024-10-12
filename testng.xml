@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Test Suite">
+
+	<test name="FAVQs API Tests">
+		<classes>
+			<class name="com.example.test.UserTests" /> 
+			<class name="com.example.test.QuoteTests" /> 
+			<class name="com.example.test.ActivityTests" /> 
+		</classes>	
+	</test> 
+	
+</suite> <!-- Suite -->

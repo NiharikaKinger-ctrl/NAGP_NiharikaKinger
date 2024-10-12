@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-12T12:18:17 IST" name="Default suite" finished-at="2024-10-12T12:18:30 IST" duration-ms="13249">
+    <groups>
+    </groups>
+    <test started-at="2024-10-12T12:18:17 IST" name="Default test" finished-at="2024-10-12T12:18:30 IST" duration-ms="13249">
+      <class name="tests.BookingTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTests@6bd61f98]" started-at="2024-10-12T12:18:16 IST" name="setup" finished-at="2024-10-12T12:18:17 IST" duration-ms="608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BookingTests@6bd61f98]" started-at="2024-10-12T12:18:17 IST" name="setUp" finished-at="2024-10-12T12:18:20 IST" duration-ms="2795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGetBookingIds()[pri:0, instance:tests.BookingTests@6bd61f98]" started-at="2024-10-12T12:18:20 IST" name="testGetBookingIds" finished-at="2024-10-12T12:18:21 IST" duration-ms="1725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBookingIds -->
+        <test-method signature="testCreateBooking()[pri:1, instance:tests.BookingTests@6bd61f98]" started-at="2024-10-12T12:18:21 IST" name="testCreateBooking" finished-at="2024-10-12T12:18:23 IST" duration-ms="1575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateBooking -->
+        <test-method signature="testGetBookingById()[pri:2, instance:tests.BookingTests@6bd61f98]" started-at="2024-10-12T12:18:23 IST" name="testGetBookingById" finished-at="2024-10-12T12:18:24 IST" depends-on-methods="tests.BookingTests.testCreateBooking" duration-ms="1453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBookingById -->
+        <test-method signature="testUpdateBooking()[pri:3, instance:tests.BookingTests@6bd61f98]" started-at="2024-10-12T12:18:24 IST" name="testUpdateBooking" finished-at="2024-10-12T12:18:27 IST" depends-on-methods="tests.BookingTests.testCreateBooking" duration-ms="2823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateBooking -->
+        <test-method signature="testPartialUpdateBooking()[pri:4, instance:tests.BookingTests@6bd61f98]" started-at="2024-10-12T12:18:27 IST" name="testPartialUpdateBooking" finished-at="2024-10-12T12:18:29 IST" depends-on-methods="tests.BookingTests.testCreateBooking" duration-ms="1406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPartialUpdateBooking -->
+        <test-method signature="testDeleteBooking()[pri:5, instance:tests.BookingTests@6bd61f98]" started-at="2024-10-12T12:18:29 IST" name="testDeleteBooking" finished-at="2024-10-12T12:18:30 IST" depends-on-methods="tests.BookingTests.testCreateBooking" duration-ms="1439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteBooking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BookingTests@6bd61f98]" started-at="2024-10-12T12:18:30 IST" name="tearDown" finished-at="2024-10-12T12:18:30 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.BookingTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

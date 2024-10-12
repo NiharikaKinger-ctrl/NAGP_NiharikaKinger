@@ -1,0 +1,6 @@
+pojo\Booking.class
+pojo\BookingDates.class
+utils\AuthUtils.class
+reports\ExtentTestManager.class
+utils\ConfigManager.class
+utils\ApiUtils.class
